@@ -1,0 +1,20 @@
+{
+    "packageDirectories": [
+        {
+            "path": "force-app",
+            "default": true,
+            "package": "Project 2 Base Org",
+            "versionName": "ver 0.1",
+            "versionNumber": "0.1.0.NEXT"
+        }
+    ],
+    "name": "Project_2",
+    "namespace": "",
+    "sfdcLoginUrl": "https://login.salesforce.com",
+    "sourceApiVersion": "52.0",
+    "packageAliases": {
+        "Project 2 Base Org": "0Ho8c000000oLkUCAU",
+        "Project 2 Base Org@0.1.0-1": "04t8c0000019qGjAAI",
+        "Project 2 Base Org@0.1.0-3": "04t8c0000019qGyAAI"
+    }
+}
