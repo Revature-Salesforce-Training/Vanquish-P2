@@ -1,0 +1,11 @@
+<!--Author: Martin Luna II-->
+<aura:component implements="flexipage:availableForAllPageTypes,forceCommunity:AvailableForAllPageTypes" access="global">
+    <div>
+        Welcome to the New Leash Adoptions Donations page. Here you can see how your donations benefit our organization and how we use them.
+        If you're interested in Donating then please fill out the form below!
+    </div>
+
+    <div class="form">
+        <c:donationsLWC></c:donationsLWC>
+    </div>
+</aura:component>

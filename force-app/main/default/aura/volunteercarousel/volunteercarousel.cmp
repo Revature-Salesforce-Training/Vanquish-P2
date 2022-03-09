@@ -1,0 +1,30 @@
+<!-- Done by Mohammed Azad : on 03/08/2022: Creates the volunteer carousel-->
+<aura:component implements="flexipage:availableForAllPageTypes,forceCommunity:AvailableForAllPageTypes" access="global">
+    <aura:attribute name="holder" type="boolean" default="false"/>
+    <lightning:carousel disableAutoRefresh="false" disableAutoScroll="false" class="lightningcarouselclass">
+        <lightning:carouselImage
+            src = "https://media.gettyimages.com/photos/female-volunteers-petting-a-dog-in-animal-shelter-picture-id565299229" 
+            header = "Janet and Jenny"
+            description = "Here are two of our very own volunteers dedicating themselves in making sure that animals are okay."
+            alternativeText = "Placeholder information for the first card.">
+        </lightning:carouselImage>
+        <lightning:carouselImage
+            src = "https://www.hillcountryanimalhospital.com/blog/wp-content/uploads/2020/11/animal-shelter-volunteer.jpg"
+            header = "Billy"
+            description = "Billy donated 40 hours of his weeks just to make sure that this Melvin, the dog, is taken care of."
+            alternativeText = "Placeholder information for the second card.">
+        </lightning:carouselImage>
+        <lightning:carouselImage
+            src = "https://photos.projects-abroad.ca/volunteer-projects/veterinary-medicine-and-animal-care/animal-care/volunteer-belize/volunteer-puppy-animalcare.jpg"
+            header = "Genevieve"
+            description = "No matter how large nor how small, Genevieve makes sure they are loved."
+            alternativeText = "Placeholder information for the third card.">
+        </lightning:carouselImage>
+    </lightning:carousel>
+    <lightning:button variant="brand" label="Hey, We Need Volunteers, Want to Join?" onclick="{! c.handleClick }" class="buttonholder"/>
+    <aura:if isTrue="{!v.holder}">
+        <div class="volunteerformholder">
+            <c:volunteerform></c:volunteerform>
+        </div>
+    </aura:if>
+</aura:component>

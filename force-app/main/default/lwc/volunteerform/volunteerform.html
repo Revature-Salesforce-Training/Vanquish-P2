@@ -1,0 +1,20 @@
+<!--
+    *Author - Gabriela Conrado*
+    *Date - 03/08/2022*
+    *Description - This creates the volunteer form.
+-->
+<template>
+    <lightning-card title="Hey! Want to Join the Team!">
+        <div >
+            <lightning-record-form
+                object-api-name={objectApiName}
+                fields={fields}
+                onsuccess={handleSuccess}
+                oncancel={handleCancel}
+                onsubmit={handleSubmit}
+                columns="2"
+                density="auto"
+            ></lightning-record-form>
+        </div>
+    </lightning-card>
+</template>

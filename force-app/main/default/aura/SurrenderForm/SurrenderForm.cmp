@@ -1,0 +1,29 @@
+<!--
+*@Author - Gabriela Conrado*
+*@Date - 03/08/2022*
+*@Description - This aura component implements lightning record form to create a new 
+Surrender Form record. 
+-->
+
+
+<!--Creating a new record implementing recordForm  -->
+
+<aura:component controller="UpdatePriority" implements="flexipage:availableForAllPageTypes,forceCommunity:AvailableForAllPageTypes" access="global"> 
+        <lightning:card title="Owner Surrender Form"> 
+            <lightning:recordForm objectApiName="Surrender_Form__c"
+                                            layoutType="Compact"
+                                            columns="2"
+                                            onsuccess="{!c.myAction}">
+            </lightning:recordForm >                 
+        </lightning:card>
+
+<!-- Instantiating the Ligthning web component -->
+
+        <aura:attribute name="flag" type="boolean" default="false"/>
+        <aura:renderIf isTrue="{!v.flag}">
+        <div class="component">   
+        <c:surrender/> 
+        </div>
+        </aura:renderIf> 
+
+</aura:component>

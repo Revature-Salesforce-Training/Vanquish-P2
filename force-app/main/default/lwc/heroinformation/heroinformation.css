@@ -1,0 +1,68 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.7rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h3.headingname {
+  text-align: center;
+  text-decoration: underline;
+  border-bottom: 1px solid #ccc;
+}
+h3.headingname:before {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  border-bottom: 1px solid rgb(41, 41, 41);
+  content: "About Us:";
+}
+
+.flex-container {
+  background-color: #ccc;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  background-color: #fff;
+  color: black;
+}
+
+.flex-child-1 {
+  width: 40%;
+}
+
+.flex-child-2 {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 75%;
+  margin: auto;
+}
+p { 
+    color: black;
+    font-size: 20px;
+    padding-left: 10vw;;
+}

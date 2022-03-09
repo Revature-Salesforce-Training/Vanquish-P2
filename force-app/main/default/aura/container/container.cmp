@@ -1,0 +1,31 @@
+<!--
+    Contains the code that makes up the experience site
+    Done by Martin Luna II, Mohammed Azad, and Gabreila Conrado
+-->
+<aura:component implements="forceCommunity:themeLayout,flexipage:availableForAllPageTypes,forceCommunity:AvailableForAllPageTypes" access="global">
+<aura:attribute name="homePage" type="boolean" default="true"/>
+<aura:attribute name="surrenderForm" type="boolean" default="false"/>
+    <header>
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li class="navbar"><a onclick="{! c.menuSelect}" label="Home Page">Surrender Form</a></li>
+            <li class="navbar"><a href="#contact">Contact</a></li>
+            <li class="navbar"><a href="#about">About</a></li>
+        </ul>
+    </header>
+    <c:herocomponent></c:herocomponent>
+    <div class="spacer"></div>
+    <c:heroinformation></c:heroinformation>
+    <c:volunteercarousel></c:volunteercarousel>
+    <lightning:accordion aura:id="accordion" activeSectionName="B">
+        <lightning:accordionSection name="A" label="Surrender an Animal Form">
+            <aura:set attribute="body">
+              <c:SurrenderForm></c:SurrenderForm>
+            </aura:set>
+        </lightning:accordionSection>
+        <lightning:accordionSection name="B" label="Donations Form">
+          <c:Donations></c:Donations>
+        </lightning:accordionSection>
+    </lightning:accordion>
+
+</aura:component>

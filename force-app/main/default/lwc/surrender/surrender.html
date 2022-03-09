@@ -1,0 +1,19 @@
+<!-- Author: Martin Luna II -->
+<!--  Implementing lightning record form to create a new surrender form /-->
+<template>
+    
+    <lightning-card title="Animal Information">
+        <div class="slds-p-horizontal_small"> 
+        <lightning-record-form
+            object-api-name={objectApiName}
+            columns="2"
+            density="comfy"
+            fields={fields}
+            onload={handleLoad}
+            onsuccess={handleSuccess}
+            oncancel={handleSubmit}
+            onerror={handleError}>
+        </lightning-record-form>
+    </div>
+    </lightning-card>
+</template>

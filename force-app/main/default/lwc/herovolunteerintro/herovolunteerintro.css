@@ -1,0 +1,13 @@
+h3.headingname {
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: underline;
+    border-bottom: 1px solid #ccc;
+  }
+h3.headingname:before {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    border-bottom: 1px solid rgb(41, 41, 41);
+    content: "View our Lovely Volunteers!";
+  }
