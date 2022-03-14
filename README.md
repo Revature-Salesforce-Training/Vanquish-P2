@@ -4,7 +4,6 @@
 * Gabriela Conrado
 * Marty Luna II
 * Mohammed Azad
-* Taino Dominquez
 
 -----
 
@@ -16,14 +15,9 @@ of these new features, along with supporting Apex classes/triggers and declarati
 -----
 
 ### Installation Instructions
-1. Download a zip of the repository and save it to your local system. https://github.com/Thenosis/Project_2.git
+1. Download a zip of the repository and save it to your local system. https://github.com/Revature-Salesforce-Training/Vanquish-P2.git
 * Or use 
 ```sh
-git clone https://github.com/Thenosis/Project_2.git
-```
-        
-2. After extraction, install the package into your org using 
-```sh
-sfdx force:package:install --package "Project_2_Donations@0.2.0-3"
+git clone https://github.com/Revature-Salesforce-Training/Vanquish-P2.git
 ```
 <p align="right">(<a href="#top">Back to top</a>)</p>
